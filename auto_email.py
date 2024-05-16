@@ -6,7 +6,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 my_email = 'justinjerome401@gmail.com'
-password_key = '---- ---- ---- ----'
+password_key = 'jftt zcca wvmr pwsr'
 
 # SMTP Server and port no for GMAIL.com
 gmail_server = "smtp.gmail.com"
@@ -20,7 +20,7 @@ my_server.starttls()
 # Login with your email and password
 my_server.login(my_email, password_key)
 
-with open("./job_contacts.csv") as csv_file:
+with open("job_contacts.csv") as csv_file:
     jobs = csv.reader(csv_file)
     header = next(jobs, None)  # Attempt to get the header row
     
